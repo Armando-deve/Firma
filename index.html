@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .firma {
+      border-top: 2px solid #0078D7;
+      padding-top: 10px;
+      width: 400px;
+    }
+
+    .nombre {
+      font-weight: bold;
+      color: #0078D7;
+      font-size: 16px;
+      animation: fadeIn 2s ease-in-out forwards;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .nombre:hover {
+      color: #005bb5;
+      text-decoration: underline;
+    }
+
+    .puesto {
+      color: #0078D7;
+      font-size: 14px;
+      animation: slideIn 2s ease-in-out forwards;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .puesto:hover {
+      transform: scale(1.1);
+    }
+
+    .empresa-logo {
+      width: 150px;
+      animation: zoomIn 2s ease-in-out forwards;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .empresa-logo:hover {
+      transform: scale(1.05);
+    }
+
+    .info {
+      font-size: 12px;
+      color: #555;
+    }
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateX(-50px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="firma">
+    <img class="empresa-logo" src="cropped-nadro_verde.png" alt="Logo empresa"><br>
+    <span class="nombre">Porfirio Marquez Ortega</span> |
+    <span class="puesto">Analista Jr Soporte TI</span><br><br>
+
+    <div class="info">
+      Av. Vasco de Quiroga 3100 | Col. Centro de Ciudad Santa Fe, CDMX C.P. 01210<br>
+      Tel: 55-5292-4343 / 800-215-1019 Ext. 3459
+    </div>
+  </div>
+</body>
+</html>
